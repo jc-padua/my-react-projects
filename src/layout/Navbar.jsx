@@ -10,11 +10,12 @@ function Navbar() {
       </div>
       <div className=" m-4">
         <ul className="flex flex-col gap-4">
-          {routes.map(({ name, path }) => (
+          {routes.map(({ name, path, topic }) => (
             <li key={name}>
+              <sub>{topic}</sub>
               <NavLink
                 to={path}
-                className="bg-slate-700 text-white block p-3 rounded-lg"
+                className="bg-slate-700 text-white block p-3 mt-2 rounded-lg"
               >
                 {name}
               </NavLink>
