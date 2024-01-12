@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useAuth } from '../../context/UserContext';
 
 function Login() {
-  const { toggleLog } = useAuth();
+  const { toggleLog, setDisplayName } = useAuth();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -16,6 +16,7 @@ function Login() {
         className="flex flex-col gap-2"
         onSubmit={e => {
           e.preventDefault();
+          setDisplayName(username);
           toggleLog();
         }}
       >

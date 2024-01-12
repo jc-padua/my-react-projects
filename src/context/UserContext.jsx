@@ -4,9 +4,13 @@ export const UserContext = createContext({});
 
 export const UserProvider = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [displayName, setDisplayName] = useState('');
+
   return (
     <UserContext.Provider
       value={{
+        displayName,
+        setDisplayName,
         isLoggedIn,
         toggleLog: () => setIsLoggedIn(!isLoggedIn),
       }}
