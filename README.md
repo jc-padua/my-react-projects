@@ -1,1 +1,1 @@
-This repository is the collection of my projects while learning React.
+This repository showcases my React learning journey through a collection of projects.
