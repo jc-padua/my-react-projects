@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <aside className="bg-white shadow-md shadow-slate-400 fixed inset-0 z-50 my-4 ml-4 h-[calc(100vh-32px)] w-72 rounded-xl ">
+    <aside className="bg-white shadow-md shadow-slate-400 fixed inset-0 z-50 my-4 ml-4 h-[calc(100vh-32px)] w-72 -translate-x-80  rounded-xl transition-transform duration-300 xl:translate-x-0 ">
       <div className="relative p-4">
         <h1 className="text-center text-xl">My Projects</h1>
       </div>

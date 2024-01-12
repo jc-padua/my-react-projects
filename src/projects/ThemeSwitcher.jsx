@@ -1,15 +1,17 @@
 import { useTheme } from '../context/ThemeContext';
 
 function ThemeSwitcher() {
-  const { theme } = useTheme();
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <div
       className={`flex flex-col items-center justify-center min-h-screen rounded-lg ${
         theme === 'light' ? 'bg-white' : 'bg-black'
       }`}
     >
-      <h1>{theme === 'light' ? '☀️' : '🌛'}</h1>
-      <Switch />
+      <h1 onClick={toggleTheme} className="text-9xl hover:cursor-pointer">
+        {theme === 'light' ? '☀️' : '🌛'}
+      </h1>
     </div>
   );
 }
