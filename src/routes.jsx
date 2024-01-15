@@ -1,6 +1,7 @@
 import App from './App';
 import FetchAPI from './projects/FetchAPI.jsx';
 import Form from './projects/Form.jsx';
+import Task from './projects/Task.jsx';
 import ThemeSwitcher from './projects/ThemeSwitcher.jsx';
 import Login from './projects/UserAuthentication/Login.jsx';
 
@@ -28,6 +29,12 @@ export const routes = [
     name: 'Fetch API',
     element: <FetchAPI />,
     topic: 'Fetch API & useEffect',
+  },
+  {
+    path: '/counter',
+    name: 'Counter',
+    element: <Task />,
+    topic: 'Using useReducer',
   },
 ];
 
