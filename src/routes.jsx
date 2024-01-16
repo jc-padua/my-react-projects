@@ -4,6 +4,7 @@ import Form from './projects/Form.jsx';
 import Task from './projects/Task.jsx';
 import ThemeSwitcher from './projects/ThemeSwitcher.jsx';
 import Login from './projects/UserAuthentication/Login.jsx';
+import LoginHOC from './projects/HOC/Login.jsx';
 
 export const routes = [
   {
@@ -35,6 +36,12 @@ export const routes = [
     name: 'Counter',
     element: <Task />,
     topic: 'Using useReducer',
+  },
+  {
+    path: '/higher-order-component',
+    name: 'Higher Order Component',
+    element: <LoginHOC />,
+    topic: 'Higher Order Component',
   },
 ];
 
